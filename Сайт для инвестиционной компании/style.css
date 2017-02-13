@@ -1,0 +1,435 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&subset=cyrillic,cyrillic-ext,latin-ext');
+
+*{
+    font-family: 'Roboto Slab', serif;
+}
+a{
+    color: #5e8dc3;
+}
+.container{
+	width: 960px;
+}
+/*Заголовок_________________________________________________________*/
+.header{
+    background: #d7dce6;
+}
+.header__top{
+    width: 960px;
+}
+.header__top{
+    padding: 25px 0;
+}
+.header__logo-company{
+    width: 194px;
+    height: 46px;
+    display: inline-block;
+}
+.header__feedback{
+    display: inline-block;
+    margin: 15px;
+    margin-left: 120px;
+}
+.header__feedback>a{
+    display: inline-block;
+    padding: 10px;
+    font-size: 11px;
+    text-transform: uppercase;
+    height: 50px;
+    width: 150px;
+    border-radius: 3px;
+    line-height: 14px;
+    color: #fff;
+}
+.header__feedback>a img{
+    float: left;
+    margin-right: 5px;
+}
+.header__feedback>a b{
+    font-size: 16px;
+    text-transform: none;
+    color: #e74c3c;
+}
+.header__forum{
+    margin-left: 10px;
+}
+.header__feedback>a:hover{
+    text-decoration: none;
+    background: #c0cfe2;
+}
+.header__right-group{
+    display: inline-block;
+    float: right;
+}
+.header__right-group label{
+	margin: 0 20px;
+}
+.header__socials{
+    display: inline-block;
+     margin: 0 5px;
+}
+.header__socials a {
+    position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    margin-left: 12px;
+}
+.header__socials a img{
+    position: absolute;
+}
+.header__fb-ico{
+    left: -32px;
+}
+.header__gp-ico{
+    left: -64px;
+}
+.header__login i{
+    color: #fff;
+    margin: 10px;
+}
+.header__login a{
+    text-decoration: underline;
+}
+.header__login span{
+    margin-left: 13px;
+}
+label{
+    position: relative;
+    width: 45px;
+    height: 20px;
+}
+select{
+    height: 22px;
+    width: 45px;
+    border-radius: 11px;
+    background: #e2e7ee;
+    border: none;
+    position: absolute;
+}
+/*Навигация*__________________________________________________________________*/
+.header__nav{
+    width: 960px;
+    background: #f7f7f7;
+    margin-bottom: 0;
+    padding: 20px 0;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    border-top: solid rgba(0, 0, 0, 0.4) 2px;
+    border-radius: 0 0 5px 5px;
+}
+.header__nav>.nav>li{
+    margin: 0 -10px;
+}
+.header__nav>.nav>li>a{
+    display: inline-block;
+    height: 25px;
+    border-radius: 12px;
+    padding: 0 15px;
+    font-size: 16px;
+}
+.header__nav>.nav>li>a:hover{
+    background: #00cc66;
+    color: #fff;
+    border-bottom: solid #00cc66 1px;
+}
+
+.header__main{
+    background: url("images/header__background-image.jpg") top center;
+}
+h1{
+    font-size: 46px;
+    color: #fff;
+    text-transform: uppercase;
+    max-width: 900px;
+    margin-top: 200px;
+    margin-bottom: 70px;
+    font-weight: normal;
+}
+.header__main p{
+    font-size: 21px;
+    color: #fff;
+    font-weight: lighter;
+    margin-bottom: 200px;
+}
+.header__main p a{
+    height: 42px;
+    border-radius: 21px;
+    margin: 25px;
+    padding: 10px 30px;
+    color: #fff;
+    font-weight: normal;
+    border-bottom: solid rgba(0, 0, 0, 0.4) 2px;
+    text-decoration: none;
+}
+.header__main p a i{
+    color: #009966;
+    font-weight: lighter;
+    margin-right: 20px;
+}
+.header__main p a:first-child{
+    background: #00cc66;
+}
+.header__main p a:last-child{
+    background: #6699cc;
+}
+.header__main p a:hover{
+    text-decoration: none;
+    border-bottom: none;
+    border-top: solid rgba(0, 0, 0, 0.4) 2px;
+    bottom: 2px;
+}
+/*Секция с ссылками________________________*/
+.section-links{
+	background: #eff3f7;
+	position:relative;
+}
+.section-links img{
+	max-width: 100%;
+    width: 125px;
+}
+.section-links h3{
+    font-size: 21px;
+    color: #6699cc;
+}
+.section-links p{
+    font-size: 16px;
+    line-height: 16px;
+    padding: 0 10px;
+    color: #444;
+}
+.section-links .row{
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+/*Треугольник вниз_________________________________________________*/
+.triangle{
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 35px solid #eff3f7;
+}
+/*Секция с ссылками на информацию__________________________________________*/
+.section-about{
+    margin-bottom: 95px;
+}
+.section-about hr{
+    border: none;
+    color: #7bdbed;
+    background-color: #7bdbed;
+    height: 1px;
+    width: 200px;
+    float: left;
+    margin: 0 0 30px 0;
+}
+.section-about h2{
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 26px;
+}
+.section-about__p_blue{
+    font-size: 26px;
+    color: #5e8dc3;
+    line-height: 30px;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+.section-about__arrow{
+    display: block;
+    margin-left: 60px;
+
+}
+.section-about__sing{
+    display: inline-block;
+    color: #00d47f;
+    font-weight: bold;
+    font-size: 26px;
+    height: 42px;
+    border-radius: 21px;
+    border: solid #00d47f 3px;
+    padding: 0 15px;
+}
+.section-about__sing:hover{
+    color: #00d47f;
+    text-decoration: none;
+}
+.section-about__read{
+    display: inline-block;
+    float: right;
+    font-weight: lighter;
+    font-size: 18px;
+    color: #fff;
+    background:  #5e8dc3;
+    height: 32px;
+    border-radius: 16px;
+    padding: 0 24px;
+    border-bottom: solid rgba(0, 0, 0, 0.4) 2px;
+    margin-top: 20px;
+}
+.section-about__read:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.section-about__world{
+    display: inline-block;
+    margin-top: 30px;
+}
+/* Секция-предложение инвестировать*/
+.section-invest{
+	background: url("images/section-invest__background.jpg") no-repeat top center;
+    height: 595px;
+}
+.section-invest h2{
+    font-weight: bold;
+    font-size: 46px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 30px;
+}
+/*Секция с ссылками на продукты*/
+.section-products{
+	background: url("images/section-products__background.png") no-repeat top center;
+    height: 853px;
+}
+.section-products h3{
+    font-size: 36px;
+    color: #222222;
+    padding: 0 80px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.section-products__item{
+    height: 425px;
+    background: url("images/section-products__item-bg.png") no-repeat bottom center;
+}
+.section-products__item:hover{
+    background: url("images/section-products__item-bg_hover.png") no-repeat bottom center;
+
+}
+.section-products__item h4{
+    font-size: 36px;
+    color: #5e8dc3;
+    font-weight: lighter;
+    position: relative;
+    margin-top: 100px;
+}
+.section-products__item h4 i{
+    display: inline-block;
+    margin-bottom: 5px;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    font-size: 14px;
+}
+.section-products__item span{
+    font-size: 36px;
+    font-weight: lighter;
+    color: #e74c3c;
+}
+.section-products__item hr{
+    margin: 16px 0;
+    background: #fff;
+    width: 260px;
+    margin-left: 16px;
+}
+.section-products__item p{
+    tab-size: 18px;
+    font-weight: lighter;
+    color: #444444;
+}
+.section-products__item a{
+    font-size: 21px;
+    color: #5e8dc3;
+    padding: 5px 25px;
+    border-bottom: solid rgba(0, 0, 0, 0.4) 2px;;
+    border-radius: 23px;
+    background: #7bdbed;
+}
+.section-products__item:hover hr{
+    background: rgba(255, 255, 255, 0.1);
+}
+/*Новости___________________________________________*/
+.news{
+    padding-bottom: 200px;
+    border-bottom: solid #e2e2e2 1px;
+}
+.news h3{
+    font-size: 26px;
+    font-weight: bold;
+}
+.news hr{
+    border: none;
+    color: #7bdbed;
+    background-color: #7bdbed;
+    height: 1px;
+    width: 220px;
+    float: left;
+    margin: 0 0 30px 0;
+}
+.news__date{
+    font-size: 16px;
+    font-weight: lighter;
+}
+.news__date h4{
+    font-size: 36px;
+    font-weight:lighter;
+    color: #2bd789;
+}
+.news__content{
+    font-size: 16px;
+    font-weight: lighter;
+}
+.news__content a{
+    font-size: 18px;
+    font-weight: normal;
+    color: #2bd789;
+}
+/*Отзывы__________________________________________*/
+.testimonials h3{
+    font-size: 26px;
+    font-weight: bold;
+}
+.testimonials hr{
+    border: none;
+    color: #7bdbed;
+    background-color: #7bdbed;
+    height: 1px;
+    width: 220px;
+    float: left;
+    margin: 0 0 30px 0;
+}
+.testimonials__item img{
+    float: left;
+    display: inline-block;
+    margin-right: 20px;
+}
+.testimonials__item h4{
+    font-size: 21px;
+}
+.testimonials__item p{
+    font-size: 14px;
+    color: #cacaca;
+    padding-bottom: 20px;
+    background: url("images/testimonials__person-bg.png") no-repeat bottom right;
+}
+.testimonials__item blockquote{
+    border: none;
+    font-size: 16px;
+    font-weight: lighter;
+    margin-left: 30px;
+    position: relative;
+}
+.testimonials__item blockquote::before{
+    font-family:  serif;
+    content: "“";
+    display: block;
+    font-size: 80px;
+    left: -25px;
+    position: absolute;
+    top: -10px;
+}
