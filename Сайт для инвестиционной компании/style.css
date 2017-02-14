@@ -491,3 +491,144 @@ input[type='radio']:checked + label:before{
     border-right: none;
     border-bottom: solid rgba(0,0,0,0.4) 2px;
 }
+/*******************************************************************************************
+блоки secure & payment
+*******************************************************************************************/
+.secure-payment{
+    /*******************************************************************************************
+    ГРАДИЕНТ ФОНА
+    *******************************************************************************************/
+    background: #cfbdc9; /* Old browsers */
+    background: -moz-linear-gradient(left, #cfbdc9 0%, #b8e5f4 50%, #d2e4ca 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #cfbdc9 0%,#b8e5f4 50%,#d2e4ca 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #cfbdc9 0%,#b8e5f4 50%,#d2e4ca 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfbdc9', endColorstr='#d2e4ca',GradientType=1 ); /* IE6-9 */
+    padding-bottom: 65px;
+}
+.secure-payment hr{
+    border: none;
+    color: #7bdbed;
+    background-color: #7bdbed;
+    height: 1px;
+    width: 300px;
+    float: left;
+    margin: 0 0 30px 0;
+}
+.payment__links{
+    list-style: none;
+    padding: 0;
+}
+.payment__links li{
+    display: inline-block;
+    margin: 0 5px;
+}
+.payment__links li a{
+    display: inline-block;
+    height: 55px;
+    width: 55px;
+    overflow: hidden;
+    position: relative;
+}
+.payment__links li a img{
+    display: block;
+    position: absolute;
+}
+.perfect-money img{
+    top: -55px;
+    left: 0;
+}
+.ego-pay img{
+    top: -55px;
+    left: -55px;
+}
+.stp img{
+    top: -55px;
+    left: -110px;
+}
+.bitcoin img{
+    top: -55px;
+    left: -165px;
+}
+.payeer img{
+    top: -55px;
+    left: -219px;
+}
+.perfect-money:hover img{
+    top: 0;
+    left: 0;
+}
+.ego-pay:hover img{
+    top: 0;
+    left: -55px;
+}
+.stp:hover img{
+    top: 0;
+    left: -110px;
+}
+.bitcoin:hover img{
+    top: 0;
+    left: -165px;
+}
+.payeer:hover img{
+    top: 0;
+    left: -219px;
+}
+.tooltip-inner{
+    background: #93b7c2;
+    color: #000;
+}
+.tooltip.bottom .tooltip-arrow{
+    border-bottom-color: #93b7c2;
+}
+/*******************************************************************************************
+FOOTER
+*******************************************************************************************/
+footer{
+    background: #34495e;
+    padding-top: 55px;
+    color: #0ec57b;
+    font-size: 16px;
+}
+footer a{
+    color: #fff;
+}
+.footer__nav{
+    font-weight: lighter;
+}
+.footer__nav span{
+    display: block;
+    padding: 10px 15px;
+}
+.footer__contact{
+    color: #7bdbed;
+}
+.footer__contact p{
+    margin-left: 40px;
+}
+.footer__contact img{
+    float: left;
+}
+.footer__copyright{
+    font-weight: 100;
+    color: #738b9c;
+}
+.footer__copyright h5{
+    font-size: 14px;
+    font-weight:100;
+    color: #e0eef7;
+}
+/*******************************************************************************************
+ADDRESS
+*******************************************************************************************/
+address{
+    background: #e4e4e4;
+    margin-bottom: 0;
+}
+address h4{
+    display: inline-block;
+    float: left;
+}
+address a{
+    float: right;
+    line-height: 36px;
+}

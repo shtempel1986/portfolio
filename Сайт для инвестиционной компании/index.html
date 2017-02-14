@@ -5,6 +5,7 @@
     <title>Investment Company</title>
     <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
@@ -175,7 +176,7 @@
             <h3>Fusce ornare, quam et vestibulum lobortis,
                 diam sem adipiscing lorem, id fringilla dolor
                 metus nec quam. Sed ac egestas mauris.</h3>
-            <div class="row"> <!--TODO: создать второй значок доллара для :hover-->
+            <div class="row">
                 <div class="section-products__item col-xs-4">
                     <h4><i class="fa fa-chevron-right"></i> Standart</h4>
                     <span><b>112%</b><br>
@@ -208,7 +209,7 @@
                     <p>Maximum Investment: <b>$50,000</b></p>
                     <p>Principal return</p>
                     <a href="#">Create Now</a>
-                </div><!--TODO: блоки с фиксированными размерами при уменьшении экрана - сделать слайдер-->
+                </div>
             </div>
         </div>
     </div>
@@ -258,7 +259,6 @@
                         <h4>John Doe</h4>
                         <p>United Kingdom, Preston</p>
                         <blockquote>
-                            <!--TODO: картинку добавить при помощи :before и content: url("");. Или большие кавычки-->
                             Suspendisse porta blandit leo, a lobortis purus feugiat vitae. Suspendisse potenti. Quisque
                             fringilla tristique ligula at ultrices.
                         </blockquote>
@@ -296,57 +296,89 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <!--TODO: добавить блок с шириной 100% и фон для него сделать как изображение или градиентом.-->
-        <div class="row">
-            <div class="secure col-xs-6">
-                <h3>Secure Encryption</h3>
-                <hr>
-                <img src="images/secure__logo.png">
-            </div>
-            <div class="payment col-xs-6">
-                <h3>Payment Methods</h3>
-                <hr>
-                <ul class="payment__links">
-                    <!--TODO: тултипы при помощи bootstrap-->
-                    <li><a href="#"><img src="images/payment__icons.png"></a></li>
-                    <li><a href="#"><img src="images/payment__icons.png"></a></li>
-                    <li><a href="#"><img src="images/payment__icons.png"></a></li>
-                    <li><a href="#"><img src="images/payment__icons.png"></a></li>
-                    <li><a href="#"><img src="images/payment__icons.png"></a></li>
-                </ul>
+    <div class="container-fluid secure-payment">
+        <div class="container">
+            <!--TODO: добавить блок с шириной 100% и фон для него сделать как изображение или градиентом.-->
+            <div class="row">
+                <div class="secure col-xs-6">
+                    <h3>Secure Encryption</h3>
+                    <div class="row">
+                        <hr>
+                    </div>
+
+                    <img src="images/secure__logo.png">
+                </div>
+                <div class="payment col-xs-6">
+                    <h3>Payment Methods</h3>
+                    <div class="row">
+                        <hr>
+                    </div>
+                    <ul class="payment__links">
+                        <!--TODO: тултипы при помощи bootstrap-->
+                        <li><a href="#" class="perfect-money" data-toggle="tooltip" data-placement="bottom"
+                               title="perfect-money"><img
+                                src="images/payment__icons.png"></a></li>
+                        <li><a href="#" class="ego-pay" data-toggle="tooltip" data-placement="bottom"
+                               title="ego-pay"><img
+                                src="images/payment__icons.png"></a></li>
+                        <li><a href="#" class="stp" data-toggle="tooltip" data-placement="bottom" title="stp"><img
+                                src="images/payment__icons.png"></a></li>
+                        <li><a href="#" class="bitcoin" data-toggle="tooltip" data-placement="bottom"
+                               title="bitcoin"><img
+                                src="images/payment__icons.png"></a></li>
+                        <li><a href="#" class="payeer" data-toggle="tooltip" data-placement="bottom" title="payeer"><img
+                                src="images/payment__icons.png"></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 </main>
 <footer class="container-fluid">
     <div class="footer container">
-        <nav class="footer__nav navbar col-xs-5">
-
-            <ul class=>
-                <li>Home</li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Investment Plans</a></li>
-                <li><a href="#">Affiliate Program</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </nav>
-        <div class="footer__contact col-xs-4">
-            <p class="footer__address">ASG building, Avenida 2
-                entre calles 38 y 40</p><!--TODO: иконки теоефона и маркера из макета-->
-            <p class="footer__city">San Jose, Costa Rica</p>
-            <p class="footer__phone">1-125-90-000-9</p>
-        </div>
-        <div class="footer__copyright col-xs-3">
-            <img src="images/footer__logo-company.png">
-            <h5>&copy Investment Company, 2014</h5>
-            <p>All rights reserved. Use of this
-                site constitutes acceptance of our
-                terms & conditions of service.</p>
+        <div class="row">
+            <nav class="footer__nav navbar col-xs-5">
+                <div class="row">
+                    <div class="navbar col-xs-6">
+                        <ul class="nav">
+                            <li><span>Home</span></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Investment Plans</a></li>
+                            <li><a href="#">Affiliate Program</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar col-xs-6">
+                        <ul class="nav">
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="footer__contact col-xs-4">
+                <img src="images/footer__marker-ico.png" alt="">
+                <p class="footer__address">ASG building, Avenida 2
+                    entre calles 38 y 40</p>
+                <p class="footer__city">San Jose, Costa Rica</p>
+                <img src="images/footer__phone-ico.png" alt="">
+                <p class="footer__phone">1-125-90-000-9</p>
+            </div>
+            <div class="footer__copyright col-xs-3">
+                <img src="images/footer__logo-company.png">
+                <h5>&copy Investment Company, 2014</h5>
+                <p>All rights reserved. Use of this
+                    site constitutes acceptance of our
+                    terms & conditions of service.</p>
+            </div>
         </div>
     </div>
 </footer>
+<address class="container-fluid">
+    <div class="container">
+        <h4>by <b>Ledovskikh Pavel</b></h4>
+        <a href="mailto:o_gredi@mail.ru">Напишите мне</a>
+    </div>
+</address>
 </body>
 </html>
