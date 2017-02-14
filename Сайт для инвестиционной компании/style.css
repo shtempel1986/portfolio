@@ -95,7 +95,7 @@ a{
 .header__login span{
     margin-left: 13px;
 }
-label{
+.header__right-group label{
     position: relative;
     width: 45px;
     height: 20px;
@@ -127,7 +127,7 @@ select{
     display: inline-block;
     height: 25px;
     border-radius: 12px;
-    padding: 0 15px;
+    padding: 0 10px;
     font-size: 16px;
 }
 .header__nav>.nav>li>a:hover{
@@ -432,4 +432,62 @@ h1{
     left: -25px;
     position: absolute;
     top: -10px;
+}
+/*******************************************************************************************
+Форма для голосования
+*******************************************************************************************/
+.poll{
+    padding-left: 65px;
+}
+.poll h3{
+    font-size: 26px;
+    font-weight: bold;
+}
+.poll hr{
+    border: none;
+    color: #7bdbed;
+    background-color: #7bdbed;
+    height: 1px;
+    width: 220px;
+    float: left;
+    margin: 0 0 30px 0;
+}
+.poll h4{
+    font-size: 21px;
+
+}
+.poll label{
+    font-size: 16px;
+    font-weight: lighter;
+    display: inline-block;
+    cursor: pointer;
+}
+input[type='radio']{
+    display: none;
+}
+.poll label:before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background: url('images/poll__radio-icons.png') right top no-repeat;
+}
+input[type='radio']:checked + label:before{
+    background: url('images/poll__radio-icons.png') left top no-repeat;
+}
+.poll button{
+    float: right;
+    font-size: 18px;
+    font-weight: lighter;
+    color: #ffffff;
+    height: 34px;
+    padding: 0 20px;
+    border-radius: 17px;
+    background: #00d47f;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid rgba(0,0,0,0.4) 2px;
 }
