@@ -30,4 +30,5 @@ $(function () {
         pager: false,
         slideWidth: 480
     });
+    $( "#header__change-language" ).selectmenu();
 });
