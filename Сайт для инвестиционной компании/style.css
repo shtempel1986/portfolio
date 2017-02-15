@@ -10,6 +10,41 @@ a{
 .container{
 	width: 960px;
 }
+/*******************************************************************************************
+ДЛЯ слайдера
+*******************************************************************************************/
+.outside{
+    display: inline-block;
+    float: right;
+}
+.slider-next, .slider-prev{
+    display: inline-block;
+}
+.slider-next a, .slider-prev a{
+    display: inline-block;
+    background: #00d47f;
+    color: #fff;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    margin: 0 4px;
+    border-radius: 2px;
+    border-bottom:  solid rgba(0,0,0,0.1) 1px;
+}
+.slider-next a.disabled, .slider-prev a.disabled{
+    background: #b2f2d8;
+    cursor: default;
+}
+/*******************************************************************************************
+Стили для всплывающих подсказок
+*******************************************************************************************/
+.tooltip-inner{
+    background: #93b7c2;
+    color: #000;
+}
+.tooltip.bottom .tooltip-arrow{
+    border-bottom-color: #93b7c2;
+}
 /*Заголовок_________________________________________________________*/
 .header{
     background: #d7dce6;
@@ -100,7 +135,7 @@ a{
     width: 45px;
     height: 20px;
 }
-select{
+#header__change-language{
     height: 22px;
     width: 45px;
     border-radius: 11px;
@@ -125,10 +160,11 @@ select{
 }
 .header__nav>.nav>li>a{
     display: inline-block;
-    height: 25px;
+    /*height: 25px;*/
     border-radius: 12px;
     padding: 0 10px;
     font-size: 16px;
+    border-bottom: solid rgba(0,0,0,0) 1px;
 }
 .header__nav>.nav>li>a:hover{
     background: #00cc66;
@@ -361,6 +397,7 @@ h1{
 .news h3{
     font-size: 26px;
     font-weight: bold;
+    display: inline-block;
 }
 .news hr{
     border: none;
@@ -393,6 +430,7 @@ h1{
 .testimonials h3{
     font-size: 26px;
     font-weight: bold;
+    display: inline-block;
 }
 .testimonials hr{
     border: none;
@@ -572,13 +610,6 @@ input[type='radio']:checked + label:before{
 .payeer:hover img{
     top: 0;
     left: -219px;
-}
-.tooltip-inner{
-    background: #93b7c2;
-    color: #000;
-}
-.tooltip.bottom .tooltip-arrow{
-    border-bottom-color: #93b7c2;
 }
 /*******************************************************************************************
 FOOTER

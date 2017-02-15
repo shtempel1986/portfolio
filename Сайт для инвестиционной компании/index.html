@@ -5,11 +5,13 @@
     <title>Investment Company</title>
     <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="bxslider/jquery.bxslider.js"></script>
     <script type="text/javascript" src="main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="bxslider/jquery.bxslider.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
@@ -24,7 +26,8 @@
             </div>
             <div class="header__right-group">
                 <label>
-                    <select name="header__change-language" id="" class="header__change-language">
+                    <select name="header__change-language" id="header__change-language">
+                        <!--TODO: сделать выпадающий список для изменения языка страницы, с картинками-->
                         <option value=""></option>
                         <option value=""></option>
                     </select>
@@ -48,7 +51,7 @@
             <nav>
                 <div class="header__nav navbar navbar-default center-block">
                     <ul class="nav nav-justified">
-                        <li>Home</li><!--TODO: добавить класс active и соответствующие стили-->
+                        <li>Home</li>
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Investment Plans</a></li>
                         <li><a href="#">Affiliate Program</a></li>
@@ -213,12 +216,40 @@
             </div>
         </div>
     </div>
-    <div class="news container"> <!--TODO: слайдер блоков на jQuery или бутстрапе-->
+    <div class="news container">
         <h3>Latest News</h3>
+        <div class="outside">
+            <div class="slider-prev" id="news__slider-prev"></div>
+            <div class="slider-next" id="news__slider-next"></div>
+        </div>
         <div class="row">
             <hr>
         </div>
-        <div class="row">
+        <div class="row" id="news__slider">
+            <div class="news__item col-xs-6 row">
+                <div class="news__date col-xs-3 text-center">
+                    <h4>12</h4>
+                    july 2014
+                </div>
+                <div class="news__content col-xs-9">
+                    <p>
+                        Fusce iaculis condimentum nulla id convallis. Cras imperdiet sollicitudin dolor nec aliquet.
+                        Fusce euismod tincidunt dapibus. Aenean semper est vel dictum scelerisque.
+                    </p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+            <div class="news__item col-xs-6 row">
+                <div class="news__date col-xs-3 text-center">
+                    <h4>9</h4>
+                    july 2014
+                </div>
+                <div class="news__content col-xs-9">
+                    <p>Curabitur ullamcorper dapibus velit. Proin malesuada vestibulum libero, ut tincidunt nulla
+                        rhoncus id. Suspendisse ac porttitor justo. Curabitur a varius ipsum. Etiam a volutpat enim.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
             <div class="news__item col-xs-6 row">
                 <div class="news__date col-xs-3 text-center">
                     <h4>12</h4>
@@ -249,11 +280,33 @@
         <div class="row">
             <div class="testimonials col-xs-8">
                 <h3>Testimonials</h3>
+                <div class="outside">
+                    <div class="slider-prev" id="testimonials__slider-prev"></div>
+                    <div class="slider-next" id="testimonials__slider-next"></div>
+                </div>
                 <div class="row">
                     <hr>
                 </div>
+                <div class="row" id="testimonials__slider">
+                    <div class="testimonials__item col-xs-6">
+                        <img src="images/testimonials__person1-portrait.png">
+                        <h4>John Doe</h4>
+                        <p>United Kingdom, Preston</p>
+                        <blockquote>
+                            Suspendisse porta blandit leo, a lobortis purus feugiat vitae. Suspendisse potenti. Quisque
+                            fringilla tristique ligula at ultrices.
+                        </blockquote>
+                    </div>
+                    <div class="testimonials__item col-xs-6">
+                        <img src="images/testimonials__person2-portrait.png">
+                        <h4>Jennifer Doe</h4>
+                        <p>United Kingdom, Preston</p>
+                        <blockquote>
+                            Maecenas rutrum tortor sed ullamcorper luctus. Aliquam ut elit metus. Donec eleifend odio
+                            dolor, a rutrum mi interdum et. Aliquam ut elit metus.
 
-                <div class="row">
+                        </blockquote>
+                    </div>
                     <div class="testimonials__item col-xs-6">
                         <img src="images/testimonials__person1-portrait.png">
                         <h4>John Doe</h4>
@@ -298,7 +351,6 @@
     </div>
     <div class="container-fluid secure-payment">
         <div class="container">
-            <!--TODO: добавить блок с шириной 100% и фон для него сделать как изображение или градиентом.-->
             <div class="row">
                 <div class="secure col-xs-6">
                     <h3>Secure Encryption</h3>
@@ -314,7 +366,6 @@
                         <hr>
                     </div>
                     <ul class="payment__links">
-                        <!--TODO: тултипы при помощи bootstrap-->
                         <li><a href="#" class="perfect-money" data-toggle="tooltip" data-placement="bottom"
                                title="perfect-money"><img
                                 src="images/payment__icons.png"></a></li>
