@@ -9,7 +9,7 @@ $(function () {
         nextSelector: '#news__slider-next',
         prevSelector: '#news__slider-prev',
         nextText: '<i class="fa fa-chevron-right"></i>',
-        prevText:'<i class="fa fa-chevron-left"></i>',
+        prevText: '<i class="fa fa-chevron-left"></i>',
         minSlides: 2,
         maxSlides: 2,
         infiniteLoop: false,
@@ -17,12 +17,12 @@ $(function () {
         pager: false,
         slideWidth: 480
     });
-    //Слайдер для отзывов________________________________________________________________________________________
+    //Слайдер для отзывов_______________________________________________________________________________________
     $('#testimonials__slider').bxSlider({
         nextSelector: '#testimonials__slider-next',
         prevSelector: '#testimonials__slider-prev',
         nextText: '<i class="fa fa-chevron-right"></i>',
-        prevText:'<i class="fa fa-chevron-left"></i>',
+        prevText: '<i class="fa fa-chevron-left"></i>',
         minSlides: 2,
         maxSlides: 2,
         infiniteLoop: false,
@@ -30,5 +30,19 @@ $(function () {
         pager: false,
         slideWidth: 480
     });
-    $( "#header__change-language" ).selectmenu();
+    //$("#header__change-language").selectmenu();
+    // Плавный переход
+    $("#section-invest__link").on("click", function (event) {
+//отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+
+//забираем идентификатор бока с атрибута href
+        var id = $(this).attr('href'),
+
+//узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+
+//анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({scrollTop: top}, 500);
+    });
 });
