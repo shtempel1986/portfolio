@@ -171,6 +171,9 @@ a{
     width: 23px !important;
     height: 22px;
 }
+.placeholder{
+    display: none;
+}
 /*Навигация*__________________________________________________________________*/
 .header__nav{
     width: 960px;

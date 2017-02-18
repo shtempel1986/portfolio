@@ -31,7 +31,7 @@ $(function () {
         slideWidth: 300
     });
 
-    // Плавный переход
+    // Плавный переход__________________________________________________________________________________________
     $("#section-invest__link").on("click", function (event) {
     //отменяем стандартную обработку нажатия по ссылке
         event.preventDefault();
@@ -45,7 +45,19 @@ $(function () {
         //анимируем переход на расстояние - top за 1500 мс
         $('body,html').animate({scrollTop: top}, 500);
     });
-    //Select
-    $('#header__change-language').styler();
-    
+    //Значение select при загрузке страницы_____________________________________________________________________
+    // if (document.location.){
+    //
+    // }
+    //Select____________________________________________________________________________________________________
+    $('#header__change-language').styler({
+        onSelectClosed: function () {
+            //смена языка_______________________________________________________________________________________________
+            if ($('li.english').hasClass('sel')){
+                document.location.href = 'index.html';
+            } else if ($('li.russian').hasClass('sel')){
+                document.location.href = 'Ru.html';
+            }
+        }
+    });
 });
