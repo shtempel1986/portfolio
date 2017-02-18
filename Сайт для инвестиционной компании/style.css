@@ -143,6 +143,34 @@ a{
     border: none;
     position: absolute;
 }
+/*******************************************************************************************
+Смена языка
+*******************************************************************************************/
+.jq-selectbox__select{
+    height: 23px;
+    width: 45px;
+    border-radius: 12px;
+    background: #e3e7ee;
+}
+.jq-selectbox__trigger{
+    border: none;
+    width: 20px;
+    height: 23px;
+}
+.jq-selectbox__trigger-arrow{
+    top: 9px;
+    right: 7px;
+}
+.english, .english .jq-selectbox__select-text{
+    background: url("images/header__language_eng.png") no-repeat center center;
+}
+.russian, .russian .jq-selectbox__select-text{
+    background: url("images/header__language_rus.png") no-repeat center center;
+}
+.jq-selectbox__select-text{
+    width: 23px !important;
+    height: 22px;
+}
 /*Навигация*__________________________________________________________________*/
 .header__nav{
     width: 960px;
