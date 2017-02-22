@@ -1,0 +1,52 @@
+/*******************************************************************************************
+Для всего документа
+*******************************************************************************************/
+h1, h2, h3, h4 ,h5, h6{
+    text-transform: uppercase;
+}
+/*******************************************************************************************
+Заголовок
+*******************************************************************************************/
+.header{
+    position: relative;
+    padding-top: 20px;
+}
+.header img{
+    float: left;
+}
+#header__nav{
+    border: none ;
+    display: inline-block;
+    float: right;
+}
+#header__nav ul li a{
+    padding: 5px 20px;
+    color: #868686;
+}
+#header__nav ul li.active a{
+    background: #ffbb42;
+    color: #fff;
+}
+/*******************************************************************************************
+Banner
+*******************************************************************************************/
+.banner{
+    background: #709dca;
+    background: -moz-linear-gradient(top,  #709dca 0%, #709dca 76%, #ffffff 76%);
+    background: -webkit-linear-gradient(top,  #709dca 0%,#709dca 76%,#ffffff 76%);
+    background: linear-gradient(to bottom,  #709dca 0%,#709dca 76%,#ffffff 76%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#709dca', endColorstr='#ffffff',GradientType=0 );
+}
+.carousel-inner{
+    padding-bottom: 60px;
+}
+.carousel-indicators li{
+    border-color: #dedfe0;
+    border-width: 2px;
+    margin: 0;
+}
+.carousel-indicators li.active{
+    border-color: #1ca8dd;
+    width: 10px;
+    height: 10px;
+}
