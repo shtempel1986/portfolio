@@ -4,6 +4,24 @@
 h1, h2, h3, h4 ,h5, h6{
     text-transform: uppercase;
 }
+button[type="submit"] {
+    height: 45px;
+    background: #ffbb42;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    text-transform: uppercase;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+input{
+    border-radius: 2px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color: #6e6e6e;
+    font-weight: normal;
+    font-size: 13px;
+}
 /*******************************************************************************************
 Заголовок
 *******************************************************************************************/
@@ -31,11 +49,41 @@ h1, h2, h3, h4 ,h5, h6{
 Banner
 *******************************************************************************************/
 .banner{
-    background: #709dca;
-    background: -moz-linear-gradient(top,  #709dca 0%, #709dca 76%, #ffffff 76%);
-    background: -webkit-linear-gradient(top,  #709dca 0%,#709dca 76%,#ffffff 76%);
-    background: linear-gradient(to bottom,  #709dca 0%,#709dca 76%,#ffffff 76%);
+    /*фон в два цвета*/
+    background: -moz-linear-gradient(top,  #709dca 0%, #709dca 79%, #ffffff 79%);
+    background: -webkit-linear-gradient(top,  #709dca 0%,#709dca 79%,#ffffff 79%);
+    background: linear-gradient(to bottom,  #709dca 0%,#709dca 79%,#ffffff 79%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#709dca', endColorstr='#ffffff',GradientType=0 );
+    color: #fff;
+    margin-bottom: 80px;
+}
+.banner h2{
+    font-size: 35px;
+    font-weight: 900;
+}
+.banner p{
+    font-size: 16px;
+}
+.banner__form{
+    margin-bottom: 50px;
+}
+.banner__form input{
+    height: 45px;
+    width: 200px;
+    border: none;
+    margin-right: 10px;
+}
+.banner__form span{
+    color: #6e6e6e;
+}
+.input-group-addon{
+    background: #fff;
+    border: none;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+.banner__form button{
+    vertical-align: top;
 }
 .carousel-inner{
     padding-bottom: 60px;
@@ -49,4 +97,120 @@ Banner
     border-color: #1ca8dd;
     width: 10px;
     height: 10px;
+}
+/*******************************************************************************************
+Service-section
+*******************************************************************************************/
+.service h2{
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+.service p{
+    font-size: 16px;
+}
+.service__wrapper{
+    margin-top: 60px;
+}
+.service__item h3, .service__item p{
+    margin-left: 100px;
+}
+.service__icon{
+    display: inline-block;
+    float: left;
+    font-size: 50px !important;
+    line-height: 100px !important;
+    margin-left: 20px;
+    text-shadow:
+            -0   -2px 0   #709DCA,
+            0   -2px 0   #709DCA,
+            -0    2px 0   #709DCA,
+            0    2px 0   #709DCA,
+            -2px -0   0   #709DCA,
+            2px -0   0   #709DCA,
+            -2px  0   0   #709DCA,
+            2px  0   0   #709DCA,
+            -1px -2px 0   #709DCA,
+            1px -2px 0   #709DCA,
+            -1px  2px 0   #709DCA,
+            1px  2px 0   #709DCA,
+            -2px -1px 0   #709DCA,
+            2px -1px 0   #709DCA,
+            -2px  1px 0   #709DCA,
+            2px  1px 0   #709DCA,
+            -2px -2px 0   #709DCA,
+            2px -2px 0   #709DCA,
+            -2px  2px 0   #709DCA,
+            2px  2px 0   #709DCA,
+            -2px -2px 0   #709DCA,
+            2px -2px 0   #709DCA,
+            -2px  2px 0   #709DCA,
+            2px  2px 0   #709DCA;
+    color: #fff;
+}
+.service__item:hover .service__icon{
+    text-shadow:
+            -0   -2px 0   #f6772c,
+            0   -2px 0   #f6772c,
+            -0    2px 0   #f6772c,
+            0    2px 0   #f6772c,
+            -2px -0   0   #f6772c,
+            2px -0   0   #f6772c,
+            -2px  0   0   #f6772c,
+            2px  0   0   #f6772c,
+            -1px -2px 0   #f6772c,
+            1px -2px 0   #f6772c,
+            -1px  2px 0   #f6772c,
+            1px  2px 0   #f6772c,
+            -2px -1px 0   #f6772c,
+            2px -1px 0   #f6772c,
+            -2px  1px 0   #f6772c,
+            2px  1px 0   #f6772c,
+            -2px -2px 0   #f6772c,
+            2px -2px 0   #f6772c,
+            -2px  2px 0   #f6772c,
+            2px  2px 0   #f6772c,
+            -2px -2px 0   #f6772c,
+            2px -2px 0   #f6772c,
+            -2px  2px 0   #f6772c,
+            2px  2px 0   #f6772c;
+}
+/*******************************************************************************************
+about us section
+*******************************************************************************************/
+.about-us{
+    background: #ffc155;
+    height: 623px;
+    color: #fff;
+}
+.about-us h2, .about-us p, .about-us, a{
+    margin-left: 65px;
+}
+.about-us h2{
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 150px;
+}
+.about-us p{
+    font-size: 13px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+.about-us a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 15px 30px;
+    border: solid #e7ad48 1px;
+    border-radius: 1px;
+    vertical-align: middle;
+}
+.about-us__image{
+    overflow: visible;
+}
+.about-us__image img{
+    float: right;
+    display: inline-block;
+    margin-right: -15px;
 }

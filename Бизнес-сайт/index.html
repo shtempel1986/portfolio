@@ -30,10 +30,24 @@
     <div class="banner container-fluid text-center">
         <h2>Boost up your Local business</h2>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum typesetting</p>
-        <form action="">
-            <label><input type="text"></label>
-            <label><input type="text"></label>
-            <label><input type="text"></label>
+        <form class="banner__form" action="">
+            <label>
+                <span class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                    <input type="text" name="banner__user-name" placeholder="Full Name">
+                </span>
+            </label>
+            <label>
+                <span class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                    <input type="text" name="banner__user-email" placeholder="Email Address">
+                </span>
+            </label><label>
+                <span class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                    <input type="text" name="banner__user-phone" placeholder="Phone Number">
+                </span>
+        </label>
             <button type="submit">Request a quote</button>
         </form>
         <div id="banner__carousel" class="carousel slide" data-ride="carousel">
@@ -56,27 +70,27 @@
                 <h2>Our Services</h2>
                 <p>Lorem Ipsum is simply dummy Business industry.</p>
             </div>
-            <div class="row">
-                <div class="service__item col-md-6"><i class="fa"></i>
+            <div class="service__wrapper row">
+                <div class="service__item col-md-6"><i class="service__icon fa fa-clock-o"></i>
                     <h3>Font-Awesome Icons</h3>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting ind
                         ustry. Lorem Ipsum has been the industry's standard dummy text ever
                         since the 1500s, when an unknown printer.</p>
                 </div>
-                <div class="service__item col-md-6"><i class="fa"></i>
+                <div class="service__item col-md-6"><i class="service__icon fa fa-gear"></i>
                     <h3>Fully Responsive Design</h3>
                     <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model
                         text,
                         and a search for 'lorem ipsum' will uncover many web sites still in their infancy</p>
                 </div>
-                <div class="service__item col-md-6"><i class="fa"></i>
+                <div class="service__item col-md-6"><i class="service__icon fa fa-graduation-cap"></i>
                     <h3>Working Contact form</h3>
                     <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model
                         text,
                         and a search for 'lorem ipsum' will un
                         cover many web sites still in their infancy</p>
                 </div>
-                <div class="service__item col-md-6"><i class="fa"></i>
+                <div class="service__item col-md-6"><i class="service__icon fa fa-rocket"></i>
                     <h3>Retina Ready icons here</h3>
                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
                         alteration
@@ -84,12 +98,12 @@
                         or randomised words which don't look even slightly believable.
                         If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything</p>
                 </div>
-                <div class="service__item col-md-6"><i class="fa"></i>
+                <div class="service__item col-md-6"><i class="service__icon fa fa-renren"></i>
                     <h3>Friendly Code</h3>
                     <p>Finibus Bonorum et Malorum" by Cicero are also reproduced in their
                         exact original form, accompanied by English versions from the 1914 translation by H. Rackham</p>
                 </div>
-                <div class="service__item col-md-6"><i class="fa"></i>
+                <div class="service__item col-md-6"><i class="service__icon fa fa-dollar"></i>
                     <h3>Flat trendy landing page Design</h3>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                         the
@@ -102,7 +116,10 @@
     <div class="about-us">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-md-push-6">
+                <div class="about-us__image col-md-6" >
+                    <img src="images/about-us__image.png" alt="">
+                </div>
+                <div class="col-md-6">
                     <h2>ABout us</h2>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                         the
@@ -120,7 +137,7 @@
     </div>
     <div class="choose text-center container-fluid">
         <div class="container">
-            <h2>Choos your price</h2>
+            <h2>Choose your price</h2>
             <p>Lorem Ipsum is simply dummy text of the printing typesetting .</p>
             <div class="row">
                 <div class="choose__item col-xs-4">
