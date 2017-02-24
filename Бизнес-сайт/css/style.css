@@ -101,6 +101,9 @@ Banner
 /*******************************************************************************************
 Service-section
 *******************************************************************************************/
+.service{
+    margin-bottom: 150px;
+}
 .service h2{
     font-weight: 900;
     font-size: 30px;
@@ -114,6 +117,9 @@ Service-section
 }
 .service__item h3, .service__item p{
     margin-left: 100px;
+}
+.service__item p{
+    font-size: 13px;
 }
 .service__icon{
     display: inline-block;
@@ -213,4 +219,33 @@ about us section
     float: right;
     display: inline-block;
     margin-right: -15px;
+}
+/*******************************************************************************************
+Choose section
+*******************************************************************************************/
+.choose{
+    background: #e7edf3;    
+}
+.choose h2{
+    margin-top: 130px;
+    margin-bottom: 0;
+    font-size: 30px;
+    font-weight: 900;
+}
+.choose__item{
+    background: #fff;
+    
+}
+.choose__item:hover{
+    background: #709dca;
+    color: #fff;
+}
+.choose__price span, .choose__price b{
+    color: #ffbb42;
+}
+.choose__price:hover span, .choose__price:hover b{
+    color: #fff;
+}
+.choose__item a{
+    background: #ffbb42;
 }
