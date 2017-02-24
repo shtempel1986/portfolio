@@ -204,7 +204,7 @@ a{
 }
 
 .header__main{
-    background: url("images/header__background-image.jpg") top center;
+    background: url("images/header__background-image.jpg") top center no-repeat;
 }
 h1{
     font-size: 46px;
