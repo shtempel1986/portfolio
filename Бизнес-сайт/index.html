@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
 </head>
 <body>
+<!--TODO: добавить интерактивности-->
 <header class="container-fluid">
     <div class="header container">
         <img src="images/header__logo.png" alt="Company logo">
@@ -116,7 +117,7 @@
     <div class="about-us">
         <div class="container">
             <div class="row">
-                <div class="about-us__image col-md-6" >
+                <div class="about-us__image col-md-6">
                     <img src="images/about-us__image.png" alt="">
                 </div>
                 <div class="col-md-6">
@@ -166,31 +167,34 @@
     </div>
     <div class="how-it-works container-fluid text-center">
         <div class="container">
+            <img src="images/how-it-works__arrow-img_top.png" alt="" id="how-it-works__arrow1">
+            <img src="images/how-it-works__arrow-img_bottom.png" alt="" id="how-it-works__arrow2">
+            <img src="images/how-it-works__arrow-img_top.png" alt="" id="how-it-works__arrow3">
             <h2>How it works</h2>
             <p>Lorem Ipsum is simply dummy Business industry</p>
             <div class="row">
-                <div class="how-it-works__item col-sm-3"><i class="center-block fa"></i>
+                <div class="how-it-works__item col-sm-3"><i class="center-block fa fa-headphones"></i>
                     <h3>step 1</h3>
                     <p>Lorem Ipsum is simply dummy text <br>
                         of the printing and typesetting ind <br>
                         ustry. Lorem Ipsum has been
                     </p>
                 </div>
-                <div class="how-it-works__item col-sm-3"><i class="center-block fa"></i>
+                <div class="how-it-works__item col-sm-3"><i class="center-block fa fa-unlock-alt"></i>
                     <h3>step 2</h3>
                     <p>Lorem Ipsum is simply dummy text <br>
                         of the printing and typesetting ind <br>
                         ustry. Lorem Ipsum has been
                     </p>
                 </div>
-                <div class="how-it-works__item col-sm-3"><i class="center-block fa"></i>
+                <div class="how-it-works__item col-sm-3"><i class="center-block fa fa-cloud-upload"></i>
                     <h3>step 3</h3>
                     <p>Lorem Ipsum is simply dummy text <br>
                         of the printing and typesetting ind <br>
                         ustry. Lorem Ipsum has been
                     </p>
                 </div>
-                <div class="how-it-works__item col-sm-3"><i class="center-block fa"></i>
+                <div class="how-it-works__item col-sm-3"><i class="center-block fa fa-thumbs-up"></i>
                     <h3>step 4</h3>
                     <p>Lorem Ipsum is simply dummy text <br>
                         of the printing and typesetting ind <br>
@@ -204,76 +208,105 @@
     <div class="happy-clients container-fluid">
         <div class="container">
             <div class="row">
-                <h2>Happy Clients</h2>
-                <p>We are explain who is using our business solutions</p>
-                <div class="happy-clients__client col-sm-6 col-xs-12"><img src="images/happy-clients__client1.png"
-                                                                           alt="">
-                    <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                        has
-                        been
-                        the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                        type
-                        and
-                        scrambled
-                        it to make.
-                    </blockquote>
-                    <h4>Darwin Michle, <span>Project manager</span></h4>
+                <h2 class="text-center">Happy Clients</h2>
+                <p class="text-center">We are explain who is using our business solutions</p>
+                <div class="happy-clients__client col-sm-6 col-xs-12">
+                    <div>
+                        <img src="images/happy-clients__client1.png"
+                             alt="">
+                        <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                            Ipsum
+                            has
+                            been
+                            the industry standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            of
+                            type
+                            and
+                            scrambled
+                            it to make.
+                        </blockquote>
+                        <h4>Darwin Michle, <span>Project manager</span></h4>
+                    </div>
                 </div>
-                <div class="happy-clients__client col-sm-6 col-xs-12"><img src="images/happy-clients__client2.png"
-                                                                           alt="">
-                    <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                        has
-                        been
-                        the industrystandard dummy text ever since the 1500s, wen an unknown printer took a galley of
-                        type
-                        and
-                        scrambled
-                        to make a type specimen book.
+                <div class="happy-clients__client col-sm-6 col-xs-12">
+                    <div>
+                        <img src="images/happy-clients__client2.png"
+                             alt="">
+                        <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                            Ipsum
+                            has
+                            been
+                            the industrystandard dummy text ever since the 1500s, wen an unknown printer took a galley
+                            of
+                            type
+                            and
+                            scrambled
+                            to make a type specimen book.
 
-                        , but also the leap into electronic typesetting, remaining essentially unchanged.
-                    </blockquote>
-                    <h4>Madam Elisabath, <span>Creative Director</span></h4>
+                            , but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </blockquote>
+                        <h4>Madam Elisabath, <span>Creative Director</span></h4>
+                    </div>
                 </div>
-                <div class="happy-clients__client col-sm-6 col-xs-12"><img src="images/happy-clients__client3.png"
-                                                                           alt="">
-                    <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                        has
-                        been
-                        the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                        type
-                        and
-                        scrambled
-                        it to make.
-                    </blockquote>
-                    <h4>Clips arter, <span>Lipsum directer</span></h4>
+                <div class="happy-clients__client col-sm-6 col-xs-12">
+                    <div>
+                        <img src="images/happy-clients__client3.png"
+                             alt="">
+                        <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                            Ipsum
+                            has
+                            been
+                            the industry standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            of
+                            type
+                            and
+                            scrambled
+                            it to make.
+                        </blockquote>
+                        <h4>Clips arter, <span>Lipsum directer</span></h4>
+                    </div>
                 </div>
-                <div class="happy-clients__client col-sm-6 col-xs-12"><img src="images/happy-clients__client4.png"
-                                                                           alt="">
-                    <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                        has
-                        been
-                        the industrystandard dummy text ever since the 1500s, wen an unknown printer took a galley of
-                        type
-                        and
-                        scrambled
-                        to make a type specimen book.
-                        , but also the leap into electronic typesetting, remaining essentially unchanged.
-                    </blockquote>
-                    <h4>zam cristafr, <span>manager</span></h4>
+                <div class="happy-clients__client col-sm-6 col-xs-12">
+                    <div>
+                        <img src="images/happy-clients__client4.png"
+                             alt="">
+                        <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                            Ipsum
+                            has
+                            been
+                            the industrystandard dummy text ever since the 1500s, wen an unknown printer took a galley
+                            of
+                            type
+                            and
+                            scrambled
+                            to make a type specimen book.
+                            , but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </blockquote>
+                        <h4>zam cristafr, <span>manager</span></h4>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="newsletter container-fluid text-center">
-        <h2 class="text-capitalize">newsletter</h2>
+        <h2>newsletter</h2>
         <p>Lorem Ipsum is simply dummy Business industry</p>
-        <form action="#" class="center-block">
-            <label><input type="text"></label>
-            <label><input type="text"></label>
-            <button type="submit"></button>
+        <form action="#" class="newsletter__form">
+            <label>
+                <span class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                    <input type="text" name="newsletter__user" placeholder="Name">
+                </span>
+            </label><label>
+                <span class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                    <input type="text" name="newsletter__email" placeholder="Email Address">
+                </span>
+        </label>
+            <button type="submit">Subscribe now</button>
         </form>
     </div>
-    <div class="map container-fluid">
+    <div class="map container-fluid text-center">
         <div class="map__address text-center">
             <h3>Address</h3>
             <p>Business street</p>
@@ -281,13 +314,13 @@
             <p>Bavani nagar. 88769</p>
             <p>Call : +987-9976-999</p>
             <a href="#">info@businessface.com</a>
-            <img src="images/map__logo.png" alt="">
         </div>
+        <img src="images/map__logo.png" alt="">
     </div>
 </main>
 <footer class='container-fluid text-center'>
-    <nav class="footer__nav navbar navbar-default">
-        <ul class="nav navbar-nav">
+    <nav class="navbar navbar-default container" id="footer__nav">
+        <ul class="nav">
             <li><a href="#">Home</a></li>
             <li><a href="#">Service</a></li>
             <li><a href="#">About us</a></li>
@@ -297,7 +330,7 @@
             <li><a href="#">Contact Us</a></li>
         </ul>
     </nav>
-    <span class="footer__phone"><i class="fa"></i> +987 9976 999</span>
+    <span class="footer__phone"><i class="fa fa-phone"></i> +987 9976 999</span>
     <ul class="footer__socials list-inline">
         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -305,7 +338,8 @@
         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
     </ul>
     <address class="container-fluid">
-        <span>All contents © copyright 2014 Business Theme. All rights reserved Designed by : akhilwebfolio</span>
+        <span>All contents © copyright 2014 Business Theme. All rights reserved Designed by : akhilwebfolio. Сверстал
+            <a href="mailto:o_gredi@mail.ru">Ледовских Павел</a></span>
     </address>
 </footer>
 </body>

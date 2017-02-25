@@ -135,6 +135,7 @@ Service-section
     font-size: 50px !important;
     line-height: 100px !important;
     margin-left: 20px;
+    /*окантовка текста*/
     text-shadow:
             -0   -2px 0   #709DCA,
             0   -2px 0   #709DCA,
@@ -287,4 +288,254 @@ Choose section
     padding: 15px 20px;
     color: #fff;
     margin-top: 20px;
+}
+/*******************************************************************************************
+How it works  section
+*******************************************************************************************/
+.how-it-works{
+    margin-bottom: 150px;
+}
+.how-it-works .container{
+    position: relative;
+}
+.how-it-works h2{
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 150px;
+}
+.how-it-works>p{
+    font-size: 18px;
+}
+.how-it-works__item{
+    padding-top: 100px;
+    padding-bottom: 90px;
+}
+.how-it-works__item i{
+    font-size: 72px;
+    color: #fff;
+    text-shadow:
+            -0   -1px 1px #709DCA,
+            0   -1px 1px #709DCA,
+            -0    1px 1px #709DCA,
+            0    1px 1px #709DCA,
+            -1px -0   1px #709DCA,
+            1px -0   1px #709DCA,
+            -1px  0   1px #709DCA,
+            1px  0   1px #709DCA,
+            -1px -1px 1px #709DCA,
+            1px -1px 1px #709DCA,
+            -1px  1px 1px #709DCA,
+            1px  1px 1px #709DCA,
+            -1px -1px 1px #709DCA,
+            1px -1px 1px #709DCA,
+            -1px  1px 1px #709DCA,
+            1px  1px 1px #709DCA;
+
+}
+.how-it-works__item h3{
+    font-family: 'Lato', sans-serif;;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.how-it-works a{
+    font-size: 14px;
+    color: #fff;
+    background: #ffbb42;
+    display: inline-block;
+    padding: 15px 25px;
+}
+.how-it-works a:hover, .how-it-works a:focus{
+    text-decoration: none;
+}
+.how-it-works img{
+    position: absolute;
+    display: inline-block;
+}
+#how-it-works__arrow1{
+    top: 285px;
+    left: calc(25% - 64px);
+}
+#how-it-works__arrow2{
+    top: 400px;
+    left: calc(50% - 65px);
+}
+#how-it-works__arrow3{
+    top: 285px;
+    left: calc(75% - 64px);
+}
+/*******************************************************************************************
+Happy clients section
+*******************************************************************************************/
+.happy-clients{
+    color: #fff;
+    background: #ffc155;
+    padding-bottom: 140px;
+}
+.happy-clients h2{
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 140px;
+    margin-bottom: 0;
+}
+.happy-clients p{
+    font-size: 16px;
+}
+.happy-clients__client {
+    padding-bottom: 20px;
+}
+.happy-clients__client>div{
+    background: #fff;
+    color: #000;
+    padding: 40px 30px 0 30px;
+    height: 240px;
+}
+
+
+.happy-clients__client img{
+    display: inline-block;
+    float: left;
+}
+blockquote{
+    border: none;
+    padding: 0;
+    margin-left: 180px;
+    font-size: 13px;
+    height: 130px;
+    position: relative;
+}
+blockquote:before{
+    content: ' “ ';
+    font-family: "Brandon Grotesque Light", sans-serif;
+    position: absolute;
+    font-size:30px;
+    top: -10px;
+    left: -10px;
+}
+blockquote:after{
+    content: ' “ ';
+    font-family: "Brandon Grotesque Light", sans-serif;
+    position: absolute;
+    font-size: 30px;
+    bottom: -25px;
+    right: 160px;
+}
+.happy-clients__client h4{
+    margin-left: 180px;
+    font-size: 14px;
+    vertical-align: bottom;
+    color: #f6772c;
+}
+.happy-clients__client h4 span{
+    color: #99a9ae;
+}
+/*******************************************************************************************
+Newsletter section
+*******************************************************************************************/
+.newsletter h2{
+    margin-top: 150px;
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+.newsletter p{
+    font-size: 16px;
+}
+.newsletter__form input{
+    height: 45px;
+    width: 300px;
+    border: solid rgba(0, 0, 0, 0.3) 1px;
+    border-left: none;
+    margin-right: 10px;
+}
+.newsletter__form .input-group-addon{
+    border: solid rgba(0, 0, 0, 0.3) 1px;
+    border-right: none;
+}
+.newsletter__form button{
+    vertical-align: top;
+}
+.newsletter__form {
+    margin-bottom: 30px;
+}
+/*******************************************************************************************
+map section
+*******************************************************************************************/
+.map{
+    background: url("../images/map-bg.png") top center no-repeat;
+    font-size: 13px;
+}
+.map__address{
+    background: #394b50;
+    color: #fff;
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    margin: 45px auto 13px auto;
+    padding-top: 50px;
+    position: relative;
+}
+.map__address a{
+    color: #ffbb42;
+}
+.map h3{
+    font-family: "Lato Black", sans-serif;
+    font-size: 15px;
+}
+.map p{
+    margin-bottom: 5px;
+}
+.map a{
+    text-transform: none;
+    display: inline-block;
+    margin: auto;
+}
+.map__address:after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 13px solid #394b50;
+    position: absolute;
+    bottom: -12px;
+    left: 133px;
+}
+.map img{
+    display: inline-block;
+    margin-bottom: 220px;
+}
+/*******************************************************************************************
+Footer
+*******************************************************************************************/
+#footer__nav{
+    border: none;
+    border-radius: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 50px;
+    margin-bottom: 5px;
+}
+#footer__nav li{
+    display: inline-block;
+}
+#footer__nav li a{
+    color: #333;
+}
+.footer__phone{
+    font-family: Lato, sans-serif;
+    font-size:22px;
+}
+.footer__socials a:hover{
+    color: #ffc155;
+}
+/*******************************************************************************************
+Address
+*******************************************************************************************/
+address{
+    font-size:13px;
+    color: #fff;
+    background: #709dca;
+    padding: 15px 0;
+    margin: 0;
 }
