@@ -1,4 +1,9 @@
 /*******************************************************************************************
+Шрифты
+*******************************************************************************************/
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
+/*TODO: шрифты надо подлючать по-другому*/
+/*******************************************************************************************
 Для всего документа
 *******************************************************************************************/
 h1, h2, h3, h4 ,h5, h6{
@@ -21,6 +26,9 @@ input{
     color: #6e6e6e;
     font-weight: normal;
     font-size: 13px;
+}
+a, button{
+    text-transform: uppercase;
 }
 /*******************************************************************************************
 Заголовок
@@ -189,7 +197,7 @@ about us section
     height: 623px;
     color: #fff;
 }
-.about-us h2, .about-us p, .about-us, a{
+.about-us h2, .about-us p, .about-us a{
     margin-left: 65px;
 }
 .about-us h2{
@@ -232,20 +240,51 @@ Choose section
     font-size: 30px;
     font-weight: 900;
 }
+.choose h2+p{
+    margin-bottom: 70px;
+}
 .choose__item{
+    font-family: 'Lato', sans-serif;;
     background: #fff;
-    
+    padding: 50px 30px;
+    border: solid rgba(0, 0, 0 , 0.2) 1px;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-bottom: 190px;
 }
 .choose__item:hover{
     background: #709dca;
     color: #fff;
+    padding: 80px 30px;
+    margin-top: -30px;
+    margin-bottom: 160px;
+    border: solid #709dca 1px;
 }
-.choose__price span, .choose__price b{
+.choose__item h3{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.choose__item b{
     color: #ffbb42;
+    font-size: 60px;
 }
-.choose__price:hover span, .choose__price:hover b{
+.choose__item b sup{
+    font-weight: normal;
+}
+.choose__item:hover b{
     color: #fff;
 }
+.choose__item p{
+    padding-top: 10px;
+}
+.choose__item p:nth-child(3), .choose__item p:nth-child(4), .choose__item p:nth-child(5){
+    border-top: solid #e2e9f0 1px;
+}
 .choose__item a{
+    display: inline-block;
     background: #ffbb42;
+    padding: 15px 20px;
+    color: #fff;
+    margin-top: 20px;
 }
